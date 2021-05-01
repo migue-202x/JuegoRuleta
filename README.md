@@ -36,11 +36,11 @@
 ![1](https://user-images.githubusercontent.com/79773876/116770646-a4c2c980-aa1b-11eb-9a44-f0572d3ce053.png)
                    ![2](https://user-images.githubusercontent.com/79773876/116770647-a4c2c980-aa1b-11eb-96e9-30be8e739021.png)
 
-## Panel del juego de ***Admin-Croupier***
+## Panel de juego: ***Admin-Croupier***
 
 ![3](https://user-images.githubusercontent.com/79773876/116770649-a55b6000-aa1b-11eb-8b47-301d7a9e1554.png)
 
-## Panel del juego de ***Jugadores***
+## Panel de juego: ***Jugadores***
 
 ![21](https://user-images.githubusercontent.com/79773876/116770602-983e7100-aa1b-11eb-8706-9e5bc75d8d7a.png)
 
