@@ -1,7 +1,7 @@
 # JuegoRuleta
 Juego de escritorio desarrollado como Final Práctico
 
-IMPORTANTE: Leer "Manual de Usuario" que se encuentra en la siguiente ruta: [JuegoRuleta\Documentos\Manual de usuario]
+IMPORTANTE: Leer "Manual de Usuario" que se encuentra en: 'Documentos\Manual de usuario';
 
 ![1](https://user-images.githubusercontent.com/79773876/116770646-a4c2c980-aa1b-11eb-9a44-f0572d3ce053.png)
 ![2](https://user-images.githubusercontent.com/79773876/116770647-a4c2c980-aa1b-11eb-96e9-30be8e739021.png)
