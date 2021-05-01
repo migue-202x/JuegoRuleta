@@ -20,11 +20,14 @@
   * No va más (2)
   * Bolilla tirada (3) 
   * Premios repartidos y fin del juego (4)
-  * Un usuario podrá ingresar a la partida, si el estado de la misma es igual a 0 (Juego creado).                                                              
-  * Tanto el Croupier como los demás usuarios no podrá salir de la partida si la misma está en curso, es decir, si el estado de esa partida no es igual a 4 (‘Fin del juego y    
-    premios repartidos’)
-  * El Croupier es quien puede bloquear o desbloquear jugadores, tanto reales como ficticios. Si un jugador está jugando una partida y se lo bloquea se lo saca de la partida con    un mensaje diciendo que ha sido bloqueado. Solo podrá volver a ingresar a una partida cuando este sea desbloqueado.
-  * Por ultimo para agregar, los jugadores ficticios se desactivan cuando el estado del juego sea igual a 4 (fin del juego y premios repartidos)
+  
+  Un usuario podrá ingresar a la partida, si el estado de la misma es igual a 0 (Juego creado).                                                              
+  
+  Tanto el Croupier como los demás usuarios no podrá salir de la partida si la misma está en curso, es decir, si el estado de esa partida no es igual a 4 (‘Fin del juego y    premios repartidos’)
+  
+  El Croupier es quien puede bloquear o desbloquear jugadores, tanto reales como ficticios. Si un jugador está jugando una partida y se lo bloquea se lo saca de la partida con    un mensaje diciendo que ha sido bloqueado. Solo podrá volver a ingresar a una partida cuando este sea desbloqueado.
+  
+  Por ultimo para agregar, los jugadores ficticios se desactivan cuando el estado del juego sea igual a 4 (fin del juego y premios repartidos)
 
 
 
