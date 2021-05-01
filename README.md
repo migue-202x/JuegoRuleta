@@ -1,26 +1,28 @@
 # JuegoRuleta
 
-Ruleta-Trucha es un sistema en red multiusuario, donde existe un administrador que controla el juego y hace de croupier y están también los demás usuarios: los jugadores reales.
+  Ruleta-Trucha es un sistema en red multiusuario, donde existe un administrador que controla el juego y hace de croupier y están también los demás usuarios: los jugadores   
+  reales.
   En el juego también se encuentran los jugadores ficticios. Estos ficticios pueden ser creados por el administrado/croupier y se diferencian de los jugadores reales por su     
   Nick, ya que su Nick de 6 caracteres es el resultado de la combinación: "X_" + UltimoFicticio de la cabecera de control aumentado en uno..., completado con ceros la parte no  
   significativa. Es decir, el primer ficticio será X_0001, el segundo X_0002, etc. 
   Por lo mismo, un jugador real no puede registrarse con un Nick que comience que ‘X_’…, ya que esto está reservado para los jugadores ficticios.
   Cuando los usuarios se registran en el sistema se le abre una cuenta corriente donde podrán comprar fichas (crédito) todas las veces que deseen
-Al crearse la cuenta de un jugador real se carga 15 veces la apuesta mínima y de un jugador ficticio 10 veces la apuesta mínima., y se reflejado en su saldo
-Es decir, que si la apuesta Mínima que se podrá efectuar es de $50
-	un jugador real tendrá como saldo inicial $750 y 
-	un jugador ficticio tendrá como saldo inicial $500
-También hay que tener en cuenta que: la apuesta máxima que se podrá efectuar es de $1000
-El Juego consta de 5 estados: 
-	Juego creado (0) 
-	Hagan sus apuestas (1) 
-	No va más (2)
-	Bolilla tirada (3) 
-	Premios repartidos y fin del juego (4)
-	Un usuario podrá ingresar a la partida, si el estado de la misma es igual a 0 (Juego creado).                                                              
-	Tanto el Croupier como los demás usuarios no podrá salir de la partida si la misma está en curso, es decir, si el estado de esa partida no es igual a 4 (‘Fin del juego y premios repartidos’)
-	El Croupier es quien puede bloquear o desbloquear jugadores, tanto reales como ficticios. Si un jugador está jugando una partida y se lo bloquea se lo saca de la partida con un mensaje diciendo que ha sido bloqueado. Solo podrá volver a ingresar a una partida cuando este sea desbloqueado.
-	Por ultimo para agregar, los jugadores ficticios se desactivan cuando el estado del juego sea igual a 4 (fin del juego y premios repartidos)
+  Al crearse la cuenta de un jugador real se carga 15 veces la apuesta mínima y de un jugador ficticio 10 veces la apuesta mínima., y se reflejado en su saldo
+  Es decir, que si la apuesta Mínima que se podrá efectuar es de $50
+  * un jugador real tendrá como saldo inicial $750 y 
+  * un jugador ficticio tendrá como saldo inicial $500
+  También hay que tener en cuenta que: la apuesta máxima que se podrá efectuar es de $1000
+  El Juego consta de 5 estados: 
+  * Juego creado (0) 
+  * Hagan sus apuestas (1) 
+  * No va más (2)
+  * Bolilla tirada (3) 
+  * Premios repartidos y fin del juego (4)
+  * Un usuario podrá ingresar a la partida, si el estado de la misma es igual a 0 (Juego creado).                                                              
+  * Tanto el Croupier como los demás usuarios no podrá salir de la partida si la misma está en curso, es decir, si el estado de esa partida no es igual a 4 (‘Fin del juego y    
+    premios repartidos’)
+  * El Croupier es quien puede bloquear o desbloquear jugadores, tanto reales como ficticios. Si un jugador está jugando una partida y se lo bloquea se lo saca de la partida con    un mensaje diciendo que ha sido bloqueado. Solo podrá volver a ingresar a una partida cuando este sea desbloqueado.
+  * Por ultimo para agregar, los jugadores ficticios se desactivan cuando el estado del juego sea igual a 4 (fin del juego y premios repartidos)
 
 
 
