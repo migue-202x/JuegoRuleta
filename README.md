@@ -42,7 +42,7 @@
 
 ## Panel del juego de ***Jugadores***
 
-![26](https://user-images.githubusercontent.com/79773876/116770611-9a083480-aa1b-11eb-8c99-072afd7014a3.png)
+![21](https://user-images.githubusercontent.com/79773876/116770602-983e7100-aa1b-11eb-8706-9e5bc75d8d7a.png)
 
 ## *** iMÁGENES VARIAS ***
 
@@ -64,7 +64,7 @@
 ![18](https://user-images.githubusercontent.com/79773876/116770599-9674ad80-aa1b-11eb-838e-0c46b79435bc.png)
 ![19](https://user-images.githubusercontent.com/79773876/116770600-970d4400-aa1b-11eb-91cc-205b9957b40b.png)
 ![20](https://user-images.githubusercontent.com/79773876/116770601-97a5da80-aa1b-11eb-97be-3cd1f262a80a.png)
-![21](https://user-images.githubusercontent.com/79773876/116770602-983e7100-aa1b-11eb-8706-9e5bc75d8d7a.png)
+![26](https://user-images.githubusercontent.com/79773876/116770611-9a083480-aa1b-11eb-8c99-072afd7014a3.png)
 ![22](https://user-images.githubusercontent.com/79773876/116770604-98d70780-aa1b-11eb-9bf2-ce74cffc891e.png)
 ![23](https://user-images.githubusercontent.com/79773876/116770606-996f9e00-aa1b-11eb-806b-267e735550aa.png)
 ![24](https://user-images.githubusercontent.com/79773876/116770607-996f9e00-aa1b-11eb-9d5d-0ec3d3cdefa1.png)
