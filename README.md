@@ -1,7 +1,6 @@
 # JuegoRuleta
 
-  Ruleta-Trucha es un sistema en red multiusuario, donde existe un administrador que controla el juego y hace de croupier y están también los demás usuarios: los jugadores   
-  reales.
+  Ruleta-Trucha es un sistema en red multiusuario, donde existe un administrador que controla el juego y hace de croupier y están también los demás usuarios: los jugadores  reales.
   En el juego también se encuentran los jugadores ficticios. Estos ficticios pueden ser creados por el administrado/croupier y se diferencian de los jugadores reales por su     
   Nick, ya que su Nick de 6 caracteres es el resultado de la combinación: "X_" + UltimoFicticio de la cabecera de control aumentado en uno..., completado con ceros la parte no  
   significativa. Es decir, el primer ficticio será X_0001, el segundo X_0002, etc. 
