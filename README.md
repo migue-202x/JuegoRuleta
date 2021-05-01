@@ -33,6 +33,8 @@
 
 ## Login
 
+![1](https://user-images.githubusercontent.com/79773876/116770646-a4c2c980-aa1b-11eb-9a44-f0572d3ce053.png)
+![2](https://user-images.githubusercontent.com/79773876/116770647-a4c2c980-aa1b-11eb-96e9-30be8e739021.png)
 
 ## Vista Admin-Croupier
 
@@ -45,8 +47,6 @@
 *** *** Se lleva a cabo una apuesta
 *** *** Ganador
 *** *** Boton trampa
-![1](https://user-images.githubusercontent.com/79773876/116770646-a4c2c980-aa1b-11eb-9a44-f0572d3ce053.png)
-![2](https://user-images.githubusercontent.com/79773876/116770647-a4c2c980-aa1b-11eb-96e9-30be8e739021.png)
 ![4](https://user-images.githubusercontent.com/79773876/116770650-a5f3f680-aa1b-11eb-964d-a13c8e35c37f.png)
 ![5](https://user-images.githubusercontent.com/79773876/116770652-a5f3f680-aa1b-11eb-94f8-c5fbbd6a5064.png)
 ![6](https://user-images.githubusercontent.com/79773876/116770654-a68c8d00-aa1b-11eb-84a8-009b26069405.png)
