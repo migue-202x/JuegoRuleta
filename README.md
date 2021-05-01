@@ -31,9 +31,22 @@
 
 # Screenshots:
 
+## Login
+
+
+## Vista Admin-Croupier
+
+![3](https://user-images.githubusercontent.com/79773876/116770649-a55b6000-aa1b-11eb-8b47-301d7a9e1554.png)
+
+## Vista Jugador
+
+![26](https://user-images.githubusercontent.com/79773876/116770611-9a083480-aa1b-11eb-8c99-072afd7014a3.png)
+
+*** *** Se lleva a cabo una apuesta
+*** *** Ganador
+*** *** Boton trampa
 ![1](https://user-images.githubusercontent.com/79773876/116770646-a4c2c980-aa1b-11eb-9a44-f0572d3ce053.png)
 ![2](https://user-images.githubusercontent.com/79773876/116770647-a4c2c980-aa1b-11eb-96e9-30be8e739021.png)
-![3](https://user-images.githubusercontent.com/79773876/116770649-a55b6000-aa1b-11eb-8b47-301d7a9e1554.png)
 ![4](https://user-images.githubusercontent.com/79773876/116770650-a5f3f680-aa1b-11eb-964d-a13c8e35c37f.png)
 ![5](https://user-images.githubusercontent.com/79773876/116770652-a5f3f680-aa1b-11eb-94f8-c5fbbd6a5064.png)
 ![6](https://user-images.githubusercontent.com/79773876/116770654-a68c8d00-aa1b-11eb-84a8-009b26069405.png)
@@ -56,7 +69,6 @@
 ![23](https://user-images.githubusercontent.com/79773876/116770606-996f9e00-aa1b-11eb-806b-267e735550aa.png)
 ![24](https://user-images.githubusercontent.com/79773876/116770607-996f9e00-aa1b-11eb-9d5d-0ec3d3cdefa1.png)
 ![25](https://user-images.githubusercontent.com/79773876/116770610-9a083480-aa1b-11eb-84ac-c77d1687796b.png)
-![26](https://user-images.githubusercontent.com/79773876/116770611-9a083480-aa1b-11eb-8c99-072afd7014a3.png)
 ![27](https://user-images.githubusercontent.com/79773876/116770612-9aa0cb00-aa1b-11eb-9d39-55146200f37d.png)
 ![28](https://user-images.githubusercontent.com/79773876/116770613-9b396180-aa1b-11eb-8c68-53c3b2a1c616.png)
 ![29](https://user-images.githubusercontent.com/79773876/116770614-9b396180-aa1b-11eb-9746-16534e6a9293.png)
