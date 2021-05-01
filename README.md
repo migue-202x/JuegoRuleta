@@ -44,7 +44,7 @@
 
 ![21](https://user-images.githubusercontent.com/79773876/116770602-983e7100-aa1b-11eb-8706-9e5bc75d8d7a.png)
 
-## *** iMÁGENES VARIAS ***
+## iMÁGENES VARIAS
 
 ![48](https://user-images.githubusercontent.com/79773876/116770636-a1c7d900-aa1b-11eb-8da8-33aa140f6efb.png)
 ![4](https://user-images.githubusercontent.com/79773876/116770650-a5f3f680-aa1b-11eb-964d-a13c8e35c37f.png)
