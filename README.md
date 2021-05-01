@@ -36,23 +36,17 @@
 ![1](https://user-images.githubusercontent.com/79773876/116770646-a4c2c980-aa1b-11eb-9a44-f0572d3ce053.png)
 ![2](https://user-images.githubusercontent.com/79773876/116770647-a4c2c980-aa1b-11eb-96e9-30be8e739021.png)
 
-## Vista Admin-Croupier
+## Panel del juego de ***Admin-Croupier***
 
 ![3](https://user-images.githubusercontent.com/79773876/116770649-a55b6000-aa1b-11eb-8b47-301d7a9e1554.png)
 
-## Vista Jugador
+## Panel del juego de ***Jugadores***
 
 ![26](https://user-images.githubusercontent.com/79773876/116770611-9a083480-aa1b-11eb-8c99-072afd7014a3.png)
 
-***Ficha de un Jugador***
+## *** iMÁGENES VARIAS ***
 
 ![48](https://user-images.githubusercontent.com/79773876/116770636-a1c7d900-aa1b-11eb-8da8-33aa140f6efb.png)
-
-***Se lleva a cabo una apuesta*** 
-
-***Ganador*** 
-
-***Boton trampa*** 
 ![4](https://user-images.githubusercontent.com/79773876/116770650-a5f3f680-aa1b-11eb-964d-a13c8e35c37f.png)
 ![5](https://user-images.githubusercontent.com/79773876/116770652-a5f3f680-aa1b-11eb-94f8-c5fbbd6a5064.png)
 ![6](https://user-images.githubusercontent.com/79773876/116770654-a68c8d00-aa1b-11eb-84a8-009b26069405.png)
