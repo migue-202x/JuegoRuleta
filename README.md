@@ -11,7 +11,9 @@
   Es decir, que si la apuesta Mínima que se podrá efectuar es de $50
   * un jugador real tendrá como saldo inicial $750 y 
   * un jugador ficticio tendrá como saldo inicial $500
+  
   También hay que tener en cuenta que: la apuesta máxima que se podrá efectuar es de $1000
+  
   El Juego consta de 5 estados: 
   * Juego creado (0) 
   * Hagan sus apuestas (1) 
