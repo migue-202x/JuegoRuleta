@@ -1,0 +1,282 @@
+unit Lib_Auxiliar;
+
+interface
+uses
+  Sysutils, Vcl.Dialogs, Winapi.Windows, Winapi.Messages, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms,  Vcl.ExtCtrls, Vcl.StdCtrls, Vcl.Buttons, Vcl.Grids;
+
+   const
+    rutaIconoOjoCerrado = 'Imagenes\Icons\ojoCerrado.bmp';
+    rutaIconoOjoAbierto = 'Imagenes\Icons\ojoAbierto.bmp';
+
+    //ApuestaMaxima = 1000;
+    ApuestaMinima = 50;
+    PosNula = -1;
+    IniFicticios = 0;
+    ClaveNula ='';
+    Fict_IniNick = 'X_';
+
+  type
+    tClave         = string[15];
+    tPos           = longint;
+    tNivel         = 0.. maxint;
+    tProfundidad   = 0.. maxint;
+    tCantidad      = 0.. maxint;
+
+
+function Mensaje_Confirmacion(Msje: String): boolean;
+procedure limpiarGrid(grid: TStringGrid);
+Procedure EncabezadoDetalladoJugadores (grid: TStringGrid);
+Procedure EncabezadoArbolJugadores(grid: TStringGrid);
+Procedure EncabezadoListadoPartidas(grid: TStringGrid);
+Procedure EncabezadoJugadoresMasGanaron(grid: TStringGrid);
+Procedure EncabezadoGanadoresXPremio(grid: TStringGrid);
+Procedure EncabezadoFiltroCtaCte(grid: TStringGrid);
+Procedure EncabezadosComunApuestas(grid: TStringGrid);
+Procedure EncabezadosComunJugadores(grid: TStringGrid);
+Procedure EncabezadoGridPremios(grid: TStringGrid);
+Procedure EncabezadosComunFicticios(grid: TStringGrid);
+
+{------------------------------------------------------------------------------}
+
+IMPLEMENTATION
+
+
+function Mensaje_Confirmacion(Msje: String): boolean;
+begin
+  if messagedlg(Msje, mtConfirmation, [mbOk, mbCancel], 0) = mrOk then
+    Mensaje_Confirmacion := true
+  else
+    Mensaje_Confirmacion := false;
+end;
+
+{------------------------------------------------------------------------------}
+
+procedure limpiarGrid(grid: TStringGrid);
+var
+  i:integer;
+begin
+  with grid  do
+    for i := 0 to RowCount - 1 do
+      Rows[i].Clear;
+end;
+
+{------------------------------------------------------------------------------}
+
+Procedure EncabezadoDetalladoJugadores(grid: TStringGrid);
+Begin
+  with grid do
+  Begin
+  //cambio el total de columnas
+    grid.ColCount:= 9;
+  // Título de las columnas
+    ColWidths[0] := Canvas.TextWidth('xxxxxxxxxxxxxxxxx');
+    ColWidths[1] := Canvas.TextWidth('xxxxxxxxxxxxxxxxx');
+    ColWidths[2] := Canvas.TextWidth('xxxxxxxxxxxxxxxxx');
+    ColWidths[3] := Canvas.TextWidth('xxxxxxxxxxxx');
+    ColWidths[4] := Canvas.TextWidth('xxxxxxxxxxxxxxxxxxxx');
+    ColWidths[5] := Canvas.TextWidth('xxxxxxxxxx');
+    ColWidths[6] := Canvas.TextWidth('xxxxxxxxxxxxxxxxxxxxxxxxx');
+    ColWidths[7] := Canvas.TextWidth('xxxxxxxxxxxxxxxxxxxxxxxxx');
+    ColWidths[8] := Canvas.TextWidth('xxxxxxxxxxxxx');
+    Cells[0, 0] := 'NOMBRE';
+    Cells[1, 0] := 'APELLIDO';
+    Cells[2, 0] := 'NICK';
+    Cells[3, 0] := 'TIPO';
+    Cells[4, 0] := 'ESTADO';
+    Cells[5, 0] := 'ACTIVO';
+    Cells[6, 0] := 'FECHA ALTA';
+    Cells[7, 0] := 'ULT. CONEXIÓN';
+    Cells[8, 0] := 'SALDO';
+  End;
+End;
+
+{--------------------------------------------------------------------------------}
+
+Procedure EncabezadoArbolJugadores(grid: TStringGrid);
+Begin
+  with grid do
+  Begin
+  //cambio el total de columnas
+    grid.ColCount:= 2;
+  // Título de las columnas
+    ColWidths[0] := Canvas.TextWidth('xxxxxxxx');
+    ColWidths[1] := Canvas.TextWidth('xxxxxxxxxxxxxxxxxx');
+    Cells[0, 0] := 'NIVEL';
+    Cells[1, 0] := 'NICK';
+  End;
+End;
+
+{--------------------------------------------------------------------------------}
+
+Procedure EncabezadoListadoPartidas(grid: TStringGrid);
+Begin
+  with grid do
+  Begin
+  //cambio el total de columnas
+    grid.ColCount:= 7;
+  // Título de las columnas
+    ColWidths[0] := Canvas.TextWidth('xxxxxxxxxxxxxxx');
+    ColWidths[1] := Canvas.TextWidth('xxxxxxxxxxxxxxxxxxxxxxxx');
+    ColWidths[2] := Canvas.TextWidth('xxxxxxxxxxxxxxxxxxx');
+    ColWidths[3] := Canvas.TextWidth('xxxxxxxxxxxxxxxxxxxxxx');
+    ColWidths[4] := Canvas.TextWidth('xxxxxxxxxxxxxxxxxxx');
+    ColWidths[5] := Canvas.TextWidth('xxxxxxxxxxxxxxxxxxxxxxxx');
+    ColWidths[6] := Canvas.TextWidth('xxxxxxxxxxxxxxxxxxx');
+    Cells[0, 0] := 'NRO.PARTIDA';
+    Cells[1, 0] := 'FECHA-HORA';
+    Cells[2, 0] := 'TOTAL J.REALES';
+    Cells[3, 0] := 'TOTAL J.FICTICIOS';
+    Cells[4, 0] := '$ APOSTADO';
+    Cells[5, 0] := '$ PREMIOS PAGADOS';
+    Cells[6, 0] := 'NRO. BOLILLA';
+  End;
+End;
+
+{--------------------------------------------------------------------------------}
+
+Procedure EncabezadoJugadoresMasGanaron(grid: TStringGrid);
+Begin
+  with grid do
+  Begin
+  //cambio el total de columnas
+    grid.ColCount:= 2;
+  // Título de las columnas
+    ColWidths[0] := Canvas.TextWidth('xxxxxxxxxxxxx');
+    ColWidths[1] := Canvas.TextWidth('xxxxxxxxxxxxx');
+    Cells[0, 0] := 'NICK';
+    Cells[1, 0] := 'SALDO';
+  End;
+End;
+
+{--------------------------------------------------------------------------------}
+
+Procedure EncabezadoGanadoresXPremio(grid: TStringGrid);
+Begin
+  with grid do
+  Begin
+  //cambio el total de columnas
+    grid.ColCount:= 5;
+  // Título de las columnas
+    ColWidths[0] := Canvas.TextWidth('xxxxxxxxxxxxxxxxx');
+    ColWidths[1] := Canvas.TextWidth('xxxxxxxxxxxxxxxxx');
+    ColWidths[2] := Canvas.TextWidth('xxxxxxxxxxxxxxxxx');
+    ColWidths[3] := Canvas.TextWidth('xxxxxxxxxxxx');
+    ColWidths[4] := Canvas.TextWidth('xxxxxxxxxxxxxx');
+    Cells[0, 0] := 'NICK';
+    Cells[1, 0] := 'JUGADA';
+    Cells[2, 0] := 'NOMENCLADOR';
+    Cells[3, 0] := 'NUMERO';
+    Cells[4, 0] := 'PREMIO';
+  End;
+End;
+
+{--------------------------------------------------------------------------------}
+
+Procedure EncabezadoFiltroCtaCte(grid: TStringGrid);
+Begin
+  with grid do
+  Begin
+  //cambio el total de columnas
+    grid.ColCount:= 6;
+  // Título de las columnas
+    ColWidths[0] := Canvas.TextWidth('xxxxxxxxxxxxxxxxxxxxxx');
+    ColWidths[1] := Canvas.TextWidth('xxxxxxxxxxxxxxxxxxxxxx');
+    ColWidths[2] := Canvas.TextWidth('xxxxxxxxxxxxxxxxxxxxxxxxxxxxx');
+    ColWidths[3] := Canvas.TextWidth('xxxxxxxxxxxxxxxxx');
+    ColWidths[4] := Canvas.TextWidth('xxxxxxxxxxxxxxxxx');
+    ColWidths[5] := Canvas.TextWidth('xxxxxxxxxxxxxxxxx');
+    Cells[0, 0] := 'NICK';
+    Cells[1, 0] := 'FECHA/HR';
+    Cells[2, 0] := 'CONCEPTO';
+    Cells[3, 0] := 'DEBE';
+    Cells[4, 0] := 'HABER';
+    Cells[5, 0] := 'SALDO';
+  End;
+End;
+
+{--------------------------------------------------------------------------------}
+
+Procedure EncabezadosComunApuestas(grid: TStringGrid);
+begin
+  with grid do
+  Begin
+  // Título de las columnas
+    ColWidths[0] := Canvas.TextWidth('xxxxxxxxxxxxxxxxxxx');
+    ColWidths[1] := Canvas.TextWidth('xxxxxxxxxxxxxxxxxxxxxxxxx');
+    ColWidths[2] := Canvas.TextWidth('xxxxxxxxxxxxxxxxxxx');
+    ColWidths[3] := Canvas.TextWidth('xxxxxxxxxxxxxxxxxxx');
+    Cells[0, 0] := 'NICK';
+    Cells[1, 0] := 'NOMENCLADOR';
+    Cells[2, 0] := 'VALOR';
+    Cells[3, 0] := 'IMPORTE';
+  End;
+end;
+
+{--------------------------------------------------------------------------------}
+
+Procedure EncabezadosComunJugadores(grid: TStringGrid);
+Begin
+  with grid do
+  Begin
+  // Título de las columnas
+    ColWidths[0] := Canvas.TextWidth('xxxxxxxxxxxxxxxxxxx');
+    ColWidths[1] := Canvas.TextWidth('xxxxxxxxxxxxxxxxxxx');
+    ColWidths[2] := Canvas.TextWidth('xxxxxxxxxxxxxxxxxxx');
+    ColWidths[3] := Canvas.TextWidth('xxxxxxxxxxxxxxxxxxx');
+    ColWidths[4] := Canvas.TextWidth('xxxxxxxxxxxxxxxxxxx');
+    ColWidths[5] := Canvas.TextWidth('xxxxxxxxxxxxxxxxxxxxxxxx');
+    Cells[0, 0] := 'NICK';
+    Cells[1, 0] := 'NOMBRE J.';
+    Cells[2, 0] := 'APELLIDO J.';
+    Cells[3, 0] := 'TIPO';
+    Cells[4, 0] := 'BLOQUEADO';
+    Cells[5, 0] := 'ULT. CONEXIÓN';
+  End;
+End;
+
+{------------------------------------------------------------------------------}
+
+Procedure EncabezadoGridPremios(grid: TStringGrid);
+begin
+  with grid do
+  Begin
+  // Título de las columnas
+    ColWidths[0] := Canvas.TextWidth('xxxxxxxxxxxxxxxxxxx');
+    ColWidths[1] := Canvas.TextWidth('xxxxxxxxxxxxxxxxxxx');
+    ColWidths[2] := Canvas.TextWidth('xxxxxxxxxxxxxxxxxxx');
+    ColWidths[3] := Canvas.TextWidth('xxxxxxxxxxxxxxxxxxx');
+    Cells[0, 0] := 'JUGADOR';
+    Cells[1, 0] := 'NOMENCLADOR';
+    Cells[2, 0] := 'NUMERO';
+    Cells[3, 0] := 'PREMIO';
+  End;
+end;
+
+{------------------------------------------------------------------------------}
+
+Procedure EncabezadosComunFicticios(grid: TStringGrid);
+Begin
+  with grid do
+  Begin
+  // Título de las columnas
+    ColWidths[0] := Canvas.TextWidth('xxxxxxxxxxxxxxxxx');
+    ColWidths[1] := Canvas.TextWidth('xxxxxxxxxxxxxxxxx');
+    ColWidths[2] := Canvas.TextWidth('xxxxxxxxxxxxxxxxx');
+    ColWidths[3] := Canvas.TextWidth('xxxxxxxxxxxxxxxxx');
+    ColWidths[4] := Canvas.TextWidth('xxxxxxxxxxxxxxxxx');
+    ColWidths[5] := Canvas.TextWidth('xxxxxxxxxx');
+    ColWidths[6] := Canvas.TextWidth('xxxxxxxxxxxxxxxxxxxxxxxxxxxx');
+    Cells[0, 0] := 'NICK';
+    Cells[1, 0] := 'NOMBRE J.';
+    Cells[2, 0] := 'APELLIDO J.';
+    Cells[3, 0] := 'TIPO';
+    Cells[4, 0] := 'ESTADO';
+    Cells[5, 0] := 'SALDO';
+    Cells[6, 0] := 'ALTA';
+  End;
+End;
+
+{------------------------------------------------------------------------------}
+
+END.

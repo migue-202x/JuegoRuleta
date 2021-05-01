@@ -1,0 +1,23 @@
+
+unit Type_Hash;
+
+Interface
+
+Uses
+  Lib_Auxiliar;
+const
+
+  _MinPosHash = 0;
+  _MaxPosHash = 129; //Segun la funcion hash a utilizar que da maximo 129
+
+type
+ tClaveHash = String [6];
+ tPosHash= _MinPosHash.._MaxPosHash;
+
+implementation
+
+
+end.
+
+
+
